@@ -1,0 +1,11 @@
+= .ctags 
+scala 的 ctags 特征设置
+放置在 ~/ 下面 (winxp 便是 C:\documents and settings\用户名)
+
+= scala.snippets
+需要安装 snipMate 插件
+
+= scala_extra.vim
+打开 scala 文件后的一些设定
+
+使用把 set tags+=E:/scala/scala-2.7.5.final/tags 改成机器上 scala 的 tag 文件位置
