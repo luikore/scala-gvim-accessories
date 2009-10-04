@@ -1,3 +1,7 @@
+
+= 基本 scala 插件
+官方下载包解压后，在 misc/scala-tool-support 中复制插件到 vimfiles 文件夹中
+
 = .ctags 
 scala 的 ctags 特征设置
 放置在 ~/ 下面 (winxp 便是 C:\documents and settings\用户名)
