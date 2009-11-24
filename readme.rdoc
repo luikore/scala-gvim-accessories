@@ -2,14 +2,22 @@
 = 基本 scala 插件
 官方下载包解压后，在 misc/scala-tool-support 中复制插件到 vimfiles 文件夹中
 
-= .ctags 
-scala 的 ctags 特征设置
-放置在 ~/ 下面 (winxp 便是 C:\documents and settings\用户名)
+= .ctags
+ctags 是源文件的包、类、函数声明的统计，用于自动完成。
+scala 文件不在 ctags 的默认辨识中，但是可以通过 ~/.ctags 设置。
+将本文件放置在 ~/ 下面即可。
+(winxp 便是 C:\documents and settings\用户名，或者运行 gvim ~/.ctags，将文件内容贴进去保存)
+
+= 创建 tags
+首先需要 ctags，如果没有，下载一个。
+在 scala library 源码目录下，运行 ctags -R，稍等一会，便产生一个 tags 文件。
+你需要修改 scala_extra.vim 里的 set tags+=.. 命令来添加 tags 内容。
 
 = scala.snippets
-需要安装 snipMate 插件
+需要安装 snipMate 插件，它提供像 textmate 那样炫的 snippet 补全功能。
+然后将 scala.snippets 放到 vimfiles/snippets 中。
 
 = scala_extra.vim
-打开 scala 文件后的一些设定
+本文件包含打开 scala 文件后的一些设定
 
-使用把 set tags+=E:/scala/scala-2.7.5.final/tags 改成机器上 scala 的 tag 文件位置
+使用:把scala_extra.vim里面的 set tags+=E:/scala/scala-2.7.5.final/tags 改成你机器上 scala 的 tag 文件位置
