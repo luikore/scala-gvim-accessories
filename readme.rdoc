@@ -6,7 +6,7 @@
 ctags 是源文件的包、类、函数声明的统计，用于自动完成。
 scala 文件不在 ctags 的默认辨识中，但是可以通过 ~/.ctags 设置。
 将本文件放置在 ~/ 下面即可。
-(winxp 便是 C:\documents and settings\用户名，或者运行 gvim ~/.ctags，将文件内容贴进去保存)
+(winxp 便是 "C:\\documents and settings\\用户名"，win7 下则是 "C:\\Users\\用户名"，或者运行 gvim ~/.ctags，将文件内容贴进去保存)
 
 = 创建 tags
 首先需要 ctags，如果没有，下载一个。
@@ -21,3 +21,4 @@ scala 文件不在 ctags 的默认辨识中，但是可以通过 ~/.ctags 设置
 本文件包含打开 scala 文件后的一些设定
 
 使用:把scala_extra.vim里面的 set tags+=E:/scala/scala-2.7.5.final/tags 改成你机器上 scala 的 tag 文件位置
+
